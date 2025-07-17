@@ -1,0 +1,64 @@
+const sessions = {
+  session1: {
+    phoneNumber: '11111111111' ,
+    sessionData: 'session1 data'
+  },
+  session2: {
+    phoneNumber: '22222222222',
+    sessionData: 'session2 data'
+  },
+  session3: {
+    phoneNumber: '33333333333',
+    sessionData: 'session3 data'
+  },
+  session4: {
+    phoneNumber: '44444444444',
+    sessionData: 'session4 data'
+  },
+    session5: {
+    phoneNumber: '55555555555',
+    sessionData: 'session5 data'
+  },
+  session6: {
+    phoneNumber: '66666666666',
+    sessionData: 'session6 data'
+  },
+  session7: {
+    phoneNumber: '77777777777',
+    sessionData: 'session7 data'
+  },
+  session8: {
+  "phoneNumber": "2348107502377",
+  "sessionData": "eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiYUlGaklCZ1hDdVkxRjBBbGhaN0FWemFLaW5uSG1SZlE2aTZFQWJrSExXYz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiZnVPZmRuR2JuWHQvN0tlcERCRjdXdmJpb2cyOUg4UjgvZFphOHp3cklDVT0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJ3T1VFRFhDTDgrWXNmQ3N5dUlSNkNJcDB5ZlphVTI0akc5L3YrdWxPUmtjPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJpZWZiTG1yRVJ0aVdrcUFILzMwLzhSODEyWkxVWk1VMzAzNzUrL2Z0VlZFPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IlFOK0lJZ2tSNGpoZi8wUlV6UlFFNGpMZHVvYjlBS1ZKSGhJV2JyRGxoM1U9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IjZKK1NyUStpMW9lQ3BmZVJ1c1RlMHIxUG00NEIvU0M4S2pKeGJMb0pGd1k9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoia0Q3RnBJQWs1dXNacm1BSXNRbVRNMDlzbWpHR21EYTJlRnYxNEpKdW5Fdz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiaWZwcDdWeTkzR3diK2RnYit2QXk0bnR5TDFHL0ZaeHNKTjFCZjNPS3VSUT0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Ikl0RThGaXl0TjIwYXFseWJmbjNzUVNCbXVGbmw5SkVtWlBCbG5NS0RsUDdiZXQ2M1luN2J2OXJwWmJDcFFJYTZPclJTb2dISUduWENhcGtJZFVyVkNBPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MTA2LCJhZHZTZWNyZXRLZXkiOiJKcEpQRUxCU1BJRUpGa01TeWY2ODZTU0JNQ3dnaUlTdU1UMmU5VVJVVHdZPSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W3sia2V5Ijp7InJlbW90ZUppZCI6IjIzNDgwMjg3MjAyNzRAcy53aGF0c2FwcC5uZXQiLCJmcm9tTWUiOnRydWUsImlkIjoiMENCMTYwOUQxMzNBNDhENzVFRkM5MDY1NjZGMDM3MUUifSwibWVzc2FnZVRpbWVzdGFtcCI6MTc1Mjc1NTc1NX0seyJrZXkiOnsicmVtb3RlSmlkIjoiMjM0ODAyODcyMDI3NEBzLndoYXRzYXBwLm5ldCIsImZyb21NZSI6dHJ1ZSwiaWQiOiIxQkM3NTU3NTY5OEFEMzUyRjJBQjhBNEZBNjhDRURCNyJ9LCJtZXNzYWdlVGltZXN0YW1wIjoxNzUyNzU1NzU5fV0sIm5leHRQcmVLZXlJZCI6MzEsImZpcnN0VW51cGxvYWRlZFByZUtleUlkIjozMSwiYWNjb3VudFN5bmNDb3VudGVyIjoxLCJhY2NvdW50U2V0dGluZ3MiOnsidW5hcmNoaXZlQ2hhdHMiOmZhbHNlfSwicmVnaXN0ZXJlZCI6dHJ1ZSwicGFpcmluZ0NvZGUiOiJaVDY2REtaNyIsIm1lIjp7ImlkIjoiMjM0ODAyODcyMDI3NDoxQHMud2hhdHNhcHAubmV0IiwibGlkIjoiMzU5NTU1ODczNjEwNDoxQGxpZCIsIm5hbWUiOiJEYW5pZWzwn6W58J/rtCJ9LCJhY2NvdW50Ijp7ImRldGFpbHMiOiJDTzdWM2FjRkVKUGM0OE1HR0FFZ0FDZ0EiLCJhY2NvdW50U2lnbmF0dXJlS2V5Ijoiakt5dXRmL3lCTzA5WDB2eit5UjV2Z2thUEJsSXUvUUZiWjV4RmhOOVh4RT0iLCJhY2NvdW50U2lnbmF0dXJlIjoiWlBIRzFlejNrVUpyRHF2cWFSUFZaazd1U296VWc3aGZsaEdldEo4Mmx2S3NSd0cwRWhTRms2WFpmV3RGd3kwMmpiYXRkcUt3TElPNXhJakp5dDZ1Q0E9PSIsImRldmljZVNpZ25hdHVyZSI6ImpMM2dhK3pNeVk2Q09kRzN4SGVONW41blNnNFRCLzdBNm00cUFxUkptZHphdHhXVEdpd21pRm9BUVNTU1Z3Rm5PWVdsVG5xZE1QSXVEeGtMS2pTTUNRPT0ifSwic2lnbmFsSWRlbnRpdGllcyI6W3siaWRlbnRpZmllciI6eyJuYW1lIjoiMjM0ODAyODcyMDI3NDoxQHMud2hhdHNhcHAubmV0IiwiZGV2aWNlSWQiOjB9LCJpZGVudGlmaWVyS2V5Ijp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQll5c3JyWC84Z1R0UFY5TDgvc2tlYjRKR2p3WlNMdjBCVzJlY1JZVGZWOFIifX1dLCJwbGF0Zm9ybSI6ImFuZHJvaWQiLCJyb3V0aW5nSW5mbyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkNBSUlCUT09In0sImxhc3RBY2NvdW50U3luY1RpbWVzdGFtcCI6MTc1Mjc1NTc0NCwibGFzdFByb3BIYXNoIjoiMlAxWWhmIiwibXlBcHBTdGF0ZUtleUlkIjoiQUFBQUFLNFMifQ=="
+},
+  session9: {
+    phoneNumber: '99999999999',
+    sessionData: 'session9 data'
+  },
+  session10: {
+    phoneNumber: '101010101010',
+    sessionData: 'session10 data'
+  },
+    session11: {
+    phoneNumber: '11111111111',
+    sessionData: 'session11 data'
+  },
+  session12: {
+    phoneNumber: '121212121212',
+    sessionData: 'session12 data'
+  },
+    session13: {
+    phoneNumber: '131313131313',
+    sessionData: 'session13 data'
+  },
+  session14: {
+    phoneNumber: '141414141414',
+    sessionData: 'session14 data'
+  },
+  session15: {
+    phoneNumber: '151515151515',
+    sessionData: 'session15 data'
+  },
+};
+
+module.exports = sessions;

@@ -1,0 +1,16 @@
+{
+  "isOn": true,
+  "isPublic": true,
+  "autoViewStatus": false,
+  "autoReact": false,
+  "chatbotEnabled": false,
+  "autoTyping": true,
+  "autoRecording": false,
+  "autoReadMessage": true,
+  "autoReactStatus": false,
+  "autoStatusEmoji": "♦️",
+  "autoDeleteAlert": false,
+  "bannedUsers": [],
+  "ownerJid": null,
+  "ownerJids": []
+}

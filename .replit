@@ -1,0 +1,21 @@
+modules = ["nodejs-20"]
+run = "npm run dev npm install"
+
+[nix]
+channel = "stable-24_05"
+packages = ["git", "vercel-pkg", "graphicsmagick"]
+
+[deployment]
+run = ["sh", "-c", "npm run dev npm install"]
+
+[workflows]
+runButton = "Start Bot"
+
+[[workflows.workflow]]
+name = "Start Bot"
+author = 44950423
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "node index.js"
